@@ -1,0 +1,28 @@
+ La plataforma "netView" permite a sus miembros ver peliculas en cualquier momento. Debe desarrollar un sistema
+ que permita administrar la información de las visualizaciones de las peliculas que realizan los miembros de la
+ plataforma.
+ Para ello cuenta con los siguientes datos:
+ Miembro: identificador, apellido y nombre, correo electrónico.
+ Visualización: identificador miembro, identificador de pelicula que vió, fecha y hora de visualización, minutos
+ que duró la visualización.
+ Los datos de los miembros están registrados en el archivo "miembros2.csv"; y los datos de las visualizaciones en el
+ archivo "Visualizaciones.csv". Ambos archivos tienen como separador el caracter ";".
+
+ El equipo de desarrollo ha acordado que cada clase debe estar en un módulo, y usted debe implementar en Python:
+ 1. Las clases Miembro y Visualización, con los atributos y métodos necesarios.
+ 2. Una clase GestorMiembros que almacene instancias de la clase Miembro.Cada una de estas instancias se creará con
+ los datos registrados en el archivo "miembros2.csv".Este gestor debe basarse en un arreglo Numpy.
+ 3. Una clase GestorVisualizaciones que almacene instancias de la clase Visualización.Cada una de estas instancias
+ se creará con los datos registrados en el archivo "Visualizaciones.csv".
+ Este gestor debe basarse en una lista Python.
+ 4. La carga de cada gestor con los datos respectivos.
+ 5. Utilizando exclusivamente los Gestores cargados con los datos de los archivos, implemente un menú de opciones
+ que permita:
+    a. Ingresar el correo electrónico de un miembro e indicar la cantidad total de minutos que ha visto peliculas.
+    b. Mostrar apellido, nombre y correo electrónico de  los miembros que han realizado visualizaciones simúltaneas.
+    Es decir, para el mismo miembro, en la misma fecha y a la misma hora hay registradas más de una visualización.
+
+    Reglas:
+    -Para esta funcionalidad debe definir la sobrecarga del operador __eq__ en la clase Visualización considerando
+    el identificador del miembro, la fecha y hora de la visulización.
+    -Resolver la funcionalidad usando la sobrecarga definida.
