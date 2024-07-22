@@ -22,7 +22,7 @@ class GestorEquipo:
             raise StopIteration
         else:
             self.__indice+=1
-            dato=self.__actual.getServi()
+            dato=self.__actual.getEqui()
             self.__actual=self.__actual.getSigui()
             return dato
     
@@ -79,17 +79,17 @@ class GestorEquipo:
         aux = self.__comienzo
         i = 0
         try:
-            while True:
-                if aux is None:
-                    raise IndexError  
+            while aux is not None:
                 if i == pos:
                     if isinstance(aux.getEqui(), MaquiPesada):
                         print("Es de tipo Maquina pesada")
                     elif isinstance(aux.getEqui(), HerraElectrica):
                         print("Es de tipo herramienta electrica")
-                     
+                    return  # Salimos de la función si encontramos el equipo en la posición
                 aux = aux.getSigui()
                 i += 1
+            # Si llegamos aquí, significa que el índice estaba fuera de rango
+            raise IndexError
         except IndexError:
             print("Índice fuera de rango")
                

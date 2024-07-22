@@ -1,0 +1,58 @@
+Una empresa de alquiler de equipos de construcción se encarga de ofrecer
+diferentes tipos de herramientas a sus clientes.Estos equipos se clasifican
+en dos categorias principales: Herramientas eléctricas y maquinarias pesadas.
+
+De todos los equipos se registra: marca, modelo, año de fabricación, tipo de 
+combustible (si aplica), potencia (en HP o Watts), capacidad de carga 
+(si aplica), tarifa de alquiler diario y cantidad de dias de alquiler.
+
+De la maquinaria pesada: se registra, además, el tipo de maquinaria (
+excavadora, bulldozer, grúa, etc.) y el peso en toneladas.
+
+De las herramientas eléctricas: se registra, además, si son a batería o
+con cable.
+
+La tarifa de alquiler de cada equipo se calcula en función de la tarifa de
+alquiler diario y de sus caracteristicas (que se encuentran en las subclases).
+
+Para ello se deben considerar las siguientes reglas de negocio:
+
+    Tarifa de alquiler de maquinaria pesada:
+    - Si peso<=10 toneladas: tarifa de alquiler diario*cantidad de días
+    - Si peso>10 toneladas: tarifa de alquiler diario*cantidad de días + 20%
+
+    Tarifa de alquiler de herramientas electricas:
+    - Con batería: tarifa de alquiler diario*cantidad de días + 10%
+    - Con cable: tarifa de alquiler diario*cantidad de días
+
+El analista de la empresa le solicita a usted que desarrolle una aplicación
+con las siguientes restricciones:
+
+a.Definir la jerarquía de clases con los métodos correspondientes a cada clase
+de la narrativa dada.
+b.Crear una clase gestor de equipos basada en una lista definida por el 
+programador para almacenar cada uno de los equipos que ofrecen servicios de 
+alquiler.Los datos de los equipos están almacenados en un archivo con extensión
+.csv, denominado "equipos.csv".Cada fila del archivo representa un equipo, la
+primera columna de la fila determina el tipo de equipo (M-Maquinaria pesada,
+E-Herramienta eléctrica).
+c.Implementar un programa principal con un menú de opciones que permita testear
+las siguientes acciones:
+    1.Leer por teclado, en el programa principal o en el menú de opciones, una
+    posición de la lista, mostrar por pantalla qué tipo de equipo se encuentra
+    almacenado en dicha posición (usar la función isinstance()).El método
+    definido en la clase lista, debe lanzar la excepción IndexError.El programa
+    principal o el menú (quien haya invocado el método de la lista), debe
+    capturar la excepción y mostrar un mensaje de error "índice fuera de rango".
+    2.Ingresar el año de fabricación e indicar la cantidad de herramientas 
+    eléctricas que fueron fabricados en dicho año.
+    3.Mostrar la cantidad de equipos de tipo maquinarias pesadas, cuya capacidad
+    de carga es menor o igual a una ingresada por teclado.
+    4.Para todos los equipos, mostrar:marca, modelo, año de fabricación, tipo
+    de combustible (si aplica), potencia, capacidad de carga (si aplica) y la
+    tarifa de alquiler.
+
+
+
+
+
