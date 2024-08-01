@@ -28,7 +28,7 @@ class GestorMiembro:
         self.__cantidad+=1
     
     def cargarMiembro(self):
-        archivo=open("HerreraMarcela/miembros2.csv")
+        archivo=open("miembros2.csv")
         reader=csv.reader(archivo,delimiter=";")
         bandera=False
         for fila in reader:

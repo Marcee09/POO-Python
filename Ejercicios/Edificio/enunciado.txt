@@ -1,0 +1,12 @@
+a- Definir las clases Edificio y Departamento con sus atributos y métodos necesarios.
+b- Definir una Gestor de Edificios, para instanciar los objetos desde el archivo
+“EdificioNorte.csv”.
+c- Implementar un menú de opciones que permita:
+1. Dado el nombre de un edificio mostrar: Nombre y apellido de los propietarios de
+cada uno de los departamentos del edificio.
+2. Mostrar la superficie total cubierta de un edificio.
+3. Dado el nombre de un propietario, mostrar la superficie total cubierta de su
+departamento e indicar que porcentaje representa del total de la superficie
+cubierta del edificio.
+4. Dado un número de piso: contar y mostrar la cantidad de departamentos que
+tienen 3 dormitorios y más de un baño. 

@@ -1,0 +1,23 @@
+Un sistema de gestión de compras para una tienda en línea maneja la información
+sobre la plataforma de compra, los productos disponibles para la compra, el 
+carrito de compra, los envíos y los clientes que realizan compras. los
+clientes son de dos tipos: clientes locales y clientes nacionales.
+Le solicitan a usted la implementación para la gestión de la información de
+los clientes.
+
+Se registra:
+De los clientes locales: nombre,apellido, email, contraseña, direccion y telefono.
+De los clientes nacionales se debe conocer además: provincia, localidad y
+código postal.
+
+Debe definir:
+a. La jerarquía de clases para representar los clientes.
+b. Una clase colección usando una lista definida por el programador, para
+almacenar los objetos de la jerarquía planteada.
+
+Debe implementar un programa que permita:
+1. Insertar objetos al final de la colección.
+2. Para cada cliente nacional que se encuentre en la colección, mostrar
+nombre del cliente y el nombre de la provincia.
+3. Dada una posición ingresada por teclado, indicar que tipo de cliente se
+encuentra en esa posición.

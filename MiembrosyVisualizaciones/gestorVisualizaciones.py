@@ -13,7 +13,7 @@ class GestorVisualizaciones:
         return self.__listaVisualizaciones
     
     def cargaVisua(self):
-        archivo=open("HerreraMarcela/Visualizaciones.csv")
+        archivo=open("Visualizaciones.csv")
         reader=csv.reader(archivo,delimiter=';')
         bandera=False
         for fila in reader:
